@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 94" width="26" height="94">
+	<title>rightarrowline</title>
+	<style>
+		.s0 { fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-width: 2 } 
+	</style>
+	<path class="s0" d="m1 1h24"/>
+	<path class="s0" d="m13 24h12"/>
+	<path class="s0" d="m13 47h12"/>
+	<path class="s0" d="m17 70h8"/>
+	<path class="s0" d="m17 93h8"/>
+</svg>

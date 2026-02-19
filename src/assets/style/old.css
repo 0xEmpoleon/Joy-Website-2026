@@ -1,0 +1,461 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'SourceCodePro-Regular';
+}
+
+/* Font Family */
+@font-face {
+    font-family: 'SourceCodePro-Regular';
+    src: url('../fonts/Source_Code_Pro/SourceCodePro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'SourceCodePro-Medium';
+    src: url('../fonts/Source_Code_Pro/SourceCodePro-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'SourceCodePro-Bold';
+    src: url('../fonts/Source_Code_Pro/SourceCodePro-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'SourceCodePro-SemiBold';
+    src: url('../fonts/Source_Code_Pro/SourceCodePro-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'SourceCodePro-Light';
+    src: url('../fonts/Source_Code_Pro/SourceCodePro-Light.ttf');
+}
+
+@font-face {
+    font-family: 'N-Regular';
+    src: url('../fonts/N_Regular/N-Regular.ttf');
+}
+
+:root {
+    --primary-color: #2b2b2b;
+    --white: #fff;
+    --black: #000;
+}
+
+/* Main container */
+.main-components {
+    min-height: 700vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Joy logo background */
+.joy-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -10;
+    background-color: var(--primary-color);
+}
+
+.joy-main .joy-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.05s linear;
+    max-width: 7vw;
+    height: auto;
+    will-change: transform;
+}
+
+/* Game image section - initially hidden */
+.game-img-sec-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    display: none; /* Will be shown by GSAP */
+    align-items: center;
+    justify-content: center;
+    background: rgba(43, 43, 43, 0.9);
+    backdrop-filter: blur(2px);
+}
+
+.game-img-sec-main .game-img-sec-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    pointer-events: auto;
+}
+
+.game-img-sec-inner .canva-sec {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gamepad-icon {
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+    will-change: transform;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+}
+
+/* Hero content section */
+.hero-con {
+    display: none; /* Will be shown by GSAP */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-con .web-3-text {
+    font-family: 'SourceCodePro-Medium';
+    color: white;
+    font-size: 50px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-con .common-text {
+    color: white;
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Intro video section */
+.intro-video {
+    background-color: black;
+    padding: 60px 20px;
+    min-height: 100vh;
+    display: none; /* Initially hidden */
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-video video {
+    max-width: 90%;
+    max-height: 80vh;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Hidden sections */
+.d-none-main {
+    display: none; /* Will be shown by GSAP */
+    opacity: 0;
+}
+
+/* Scroll text and instructions */
+.scroll-text {
+    color: #ffffff;
+    font-family: "SourceCodePro-Medium";
+}
+
+.scrolldown-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 100px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    z-index: 100;
+}
+
+.scroll-down {
+    width: 50px;
+    height: 50px;
+    filter: invert(1) brightness(2) contrast(100%);
+    -webkit-filter: invert(1) brightness(2) contrast(100%);
+}
+
+.scrolldown-main.hide {
+    opacity: 0;
+}
+
+/* Right line element */
+.home-wrapper .rightline-main {
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+/* Gaming Console Section */
+.gamig-console-main {
+    padding: 167px 0 75px 0;
+    background-image: url(../images/png/gmConsoleBg.png);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.gamig-console-main .gamin-console-left {
+    width: 50%;
+}
+
+.gamin-console-left .gamin-con-inner {
+    width: 100%;
+    max-width: 408px;
+    margin: 0 auto;
+}
+
+.gamin-con-inner .next-gen-title {
+    font-family: 'SourceCodePro-SemiBold';
+    font-size: 39px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: #000000;
+    margin-bottom: 31px;
+}
+
+.gamin-con-inner .gamin-grid-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20.17px;
+    row-gap: 15px;
+}
+
+.gamin-grid-sec .berachain-box-sec {
+    padding: 24px;
+    text-align: center;
+    border: 1px solid #3F4042;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.berachain-box-sec .berachain-img-sec {
+    width: 66px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EDFFAD;
+    border-radius: 50%;
+}
+
+.berachain-con-sec .berachain-title {
+    font-family: 'SourceCodePro-Regular';
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Partners Section */
+.partners-main-sec {
+    padding: 144px 0 102px 0;
+    background-image: url(../images/png/gmConsoleBg.png);
+}
+
+.main-title-sec .main-title {
+    font-family: 'SourceCodePro-Medium';
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.partners-inner .partners-grid-sec {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-right: 2px solid rgb(63, 64, 66);
+    border-bottom: 2px solid rgb(63, 64, 66);
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.partners-grid-sec .partners-box {
+    border-top: 2px solid rgb(63, 64, 66);
+    border-left: 2px solid rgb(63, 64, 66);
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners-box .partners-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* JOY Genesis Section */
+.joy-genesis-main {
+    background-image: url(../images/png/gmConsoleBg.png);
+    padding: 100px 0;
+}
+
+.joy-genesis-left {
+    width: 50%;
+}
+
+.joy-genesis-con .main-title {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.common-text {
+    font-family: 'SourceCodePro-Medium';
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    margin: 0;
+}
+
+.common-text.mb-25 {
+    margin-bottom: 25px;
+}
+
+.joy-genesis-main .joy-genesis-inner {
+    display: flex;
+    align-items: center;
+    gap: 188px;
+}
+
+.joy-genesis-con {
+    max-width: 377px;
+    width: 100%;
+}
+
+/* Specifications Section */
+.specification-sec,
+.faq-sec {
+    background-image: url(../images/png/darckBg.png);
+    background-color: #242424;
+    padding: 176px 0 108px 0;
+}
+
+.specification-sec .specification-inner-sec {
+    display: flex;
+    gap: 60px;
+}
+
+.specification-inner-sec .specification-left-sec {
+    width: 50%;
+}
+
+.specification-inner-sec .specification-right-sec {
+    width: 50%;
+}
+
+.specification-left-inner .main-title {
+    text-align: left;
+    color: #FFFFFF;
+    padding-left: 68px;
+    margin-bottom: 103px;
+}
+
+.specification-left-sec .specification-left-inner {
+    margin-left: auto;
+    max-width: 563px;
+    width: 100%;
+}
+
+.specification-right-sec .specification-grid-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 30px;
+    width: 100%;
+    max-width: 680px;
+}
+
+.specification-box .specif-title {
+    font-family: 'SourceCodePro-Medium';
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #8D8D8D;
+    margin-bottom: 8px;
+}
+
+.specification-box .specif-con,
+.specif-ul .specif-li {
+    font-family: 'SourceCodePro-Medium';
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.specification-box .specif-ul {
+    padding-left: 25px;
+}
+
+/* FAQ Section */
+.faq-sec {
+    padding: 80px 0 56px;
+}
+
+.faq-sec .accordion-main-sec {
+    width: 100%;
+    max-width: 588px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-con .web-3-text {
+        font-size: 36px;
+    }
+    
+    .hero-con .common-text {
+        font-size: 24px;
+    }
+    
+    .gamepad-icon {
+        max-width: 80%;
+    }
+    
+    .intro-video video {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-con .web-3-text {
+        font-size: 28px;
+    }
+    
+    .hero-con .common-text {
+        font-size: 18px;
+    }
+}

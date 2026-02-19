@@ -1,0 +1,1188 @@
+@media  (max-width: 1370px) {
+    .card-title {
+    font-size: 20px;
+    line-height: 26px;
+    }
+
+    .blog-card .img-blog-list {
+    height: 240px;
+    }
+.blog-desc-content h4, .blog-desc-content h5, .blog-desc-content h6, .blog-desc-content h3, .blog-desc-content h2, .blog-desc-content h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 36px;
+}
+
+.max-join-footer .curve-text-sec svg textPath {
+      font-size: 39px ;
+      text-transform: none ;
+    }
+
+.blog-desc-content p {
+    font-size: 21px;
+    line-height: 33px;
+    margin-bottom: 40px;
+}
+  .main-components .hero-left-title-one {
+    font-size: 55px;
+    line-height: 70px;
+  }  
+  .main-components .hero-left-title-one span {
+    font-size: 47px;
+  }
+  .curve-text {
+    font-size: 80px;
+  }
+  .genesis-rate-img {
+    max-width: 250px;
+    object-fit: contain;
+}
+.presale-main-sec .small-title-text {
+    font-size: 54px;
+    line-height: 86px;
+    margin-bottom: 24.45px;
+}
+.presale-grid-sec .presale-bg {
+    padding: 21.45px 25.31px;
+}
+.presale-bg .specification-title {
+    font-size: 29px;
+}
+.coming-soon-br-sec .soon-br-one {
+    height: 813px;
+}
+.coming-soon-section {
+    gap: 20px;
+    margin-top: 40px;
+}
+/* .timeline-tube.timeline-tube-three .tube-outer {
+    height: 240px;
+} */
+.timeline-text {
+    font-size: 38px;
+    line-height: 39px;
+}
+.video-title-text {
+    font-size: 50px;
+    line-height: 70px;
+}
+.video-title-sub-text {
+    font-size: 40px;
+    line-height: 50px;
+}
+.footerjoin-content .youtline-title, .footerjoin-content .youtline-title span {
+    font-size: 70px;
+    line-height: 90px;
+}
+.youtline-title::after{
+    width: 220px;
+    height: 260px;
+    right: -113px;
+}
+.joy-img-main-sec .joy-img-inner-sec {
+    height: 460px;
+}
+.youtline-title::after, .max-join-footer .curve-text-sec::after {
+    width: 231px;
+    height: 307px;
+    right: -143px;
+    top: 130px;
+}
+}
+
+@media (max-width: 1280px) {
+    .blog-tabs-scroll {
+    gap: 48px;
+    }
+    /* .specification-grid-main {
+        grid-template-columns: 380px 1fr;
+    } */
+
+    .gamig-console-main .gamig-console-right {
+        max-width: 550px;
+        object-fit: contain;
+    }
+
+    .partners-inner .partners-grid-sec {
+        width: 600px;
+        height: 600px;
+    }
+
+    .joy-genesis-main .joy-genesis-inner {
+        gap: 140px;
+    }
+
+    .specification-right-sec .specification-grid-sec {
+        gap: 20px;
+        max-width: 580px;
+    }
+
+    .specification-sec .specification-inner-sec {
+        gap: 50px;
+    }
+
+    .specification-box .specif-con,
+    .specif-ul .specif-li {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .aboutus-inner-right .aboutus-img {
+        max-width: 500px;
+        height: 100%;
+    }
+        .main-components .hero-left-title-one {
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .prebook-max-content {
+    padding-bottom: 100px;
+}
+    .video-title-text {
+        font-size: 45px;
+        line-height: 65px;
+    }
+        .video-title-sub-text {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .detail-slider-cards {
+    padding: 50px 0;
+}
+    .joy-img-main-sec .joy-img-inner-sec {
+        height: 400px;
+    }
+       .youtline-title::after {
+        width: 160px;
+        height: 190px;
+       
+    }
+}
+
+@media (max-width: 1180px) {
+    .joy-genesis-left .half-console-img {
+        max-width: 610px;
+        height: 100%;
+    }
+
+    .joy-genesis-main .joy-genesis-inner {
+        gap: 100px;
+    }
+
+    .aboutus-section .aboutus-inner-sec {
+        gap: 50px;
+        max-width: 90%;
+    }
+
+    .main-title-sec .main-title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .aboutus-inner-right .aboutus-img {
+        max-width: 400px;
+    }
+        .footerjoin-content .youtline-title, .footerjoin-content .youtline-title span {
+        font-size: 60px;
+        line-height: 80px;
+    }
+         .video-title-text {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .video-title-sub-text {
+        font-size: 33px;
+        line-height: 35px;
+    }
+        /* .genesis-rate-img {
+        max-width: 130px;
+        object-fit: contain;
+    } */
+        .curve-text {
+        font-size: 70px;
+    }
+    .prebook-genesis-details .prebook-join-title {
+    font-size: 30px;
+    line-height: 41px;
+}
+.grid-swiper-thumbs {
+    max-width: 500px;
+}
+    .presale-bg .specification-title {
+        font-size: 23px;
+    }
+    .presale-grid-sec .presale-bg{
+        width: auto;
+    }
+    .presale-grid-sec .presale-bg {
+        padding: 21.45px 20.31px;
+    }
+        .joy-img-main-sec .joy-img-inner-sec {
+        height: 320px;
+    }
+}
+@media screen and (min-width: 991px) and (max-width: 1024px) {
+
+}
+@media (max-width: 1024px) {
+    .home-specification-sec .specification-sec .specefication-icon {
+    left: 0px;
+    width: 100%;
+    right: 0px;
+    object-fit: contain;
+}
+.specification-grid-main .left-specification-content{
+    position: relative;
+}
+
+.home-specification-sec .specification-container {
+    max-width: 90%;
+}
+        .main-components .hero-left-title-one {
+        font-size: 50px;
+        line-height: 60px;
+        letter-spacing: 3px;
+        -webkit-text-stroke: 1.5px #000000;
+    }
+
+    .main-components .hero-left-title-one span {
+        font-size: 38px;
+        -webkit-text-stroke: 1.5px #000;
+    }
+
+        .blog-desc-content h4, .blog-desc-content h5, .blog-desc-content h6, .blog-desc-content h3, .blog-desc-content h2, .blog-desc-content h1 {
+        font-size: 32px;
+        line-height: 50px;
+        margin-bottom: 33px;
+    }
+
+    .recently-grid-contain h6 {
+    font-size: 38px;
+    line-height: 42px;
+    }
+
+    .blog-tabs-scroll {
+    gap: 24px;
+    }
+
+    .search-box {
+    max-width: 251px;
+    }
+
+    .tab-button {
+    font-size: 18px;
+    line-height: 20px;
+    }
+
+    .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-box {
+    max-width: 295px;
+    }
+
+    .specification-sec .specefication-icon {
+        width: 449px;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .specification-sec {
+        padding: 100px 0 100px 0;
+    }
+
+    .gamig-console-main {
+        min-height: auto;
+    }
+
+    .joy-genesis-left .half-console-img {
+        max-width: 530px;
+    }
+
+    .joy-genesis-main .joy-genesis-inner {
+        gap: 80px;
+    }
+
+    .specification-sec .specification-inner-sec {
+        flex-direction: column;
+    }
+
+    .specification-sec .specification-inner-sec {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .specification-inner-sec .specification-left-sec,
+    .specification-inner-sec .specification-right-sec {
+        width: 100%;
+    }
+
+    .specification-left-sec .specification-left-inner {
+        margin-left: unset;
+        max-width: 100%;
+    }
+
+    .specification-left-inner .half-console-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .specification-right-sec .specification-grid-sec {
+        max-width: 100%;
+    }
+
+    .nft-checkout-inner {
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .prebook-genesis-details .prebook-desc-content {
+        font-size: 26px;
+        line-height: 48px;
+    }
+
+    .grid-processor-main {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-left-processor .processor-img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .footerjoin-content .youtline-title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .youtline-title::after, .max-join-footer .curve-text-sec::after {
+        width: 221px;
+        height: 147px;
+        right: -143px;
+        top: 110px;
+    }
+
+
+        .main-components .hero-left-title-one {
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 2px;
+        -webkit-text-stroke: 1.5px #000000;
+        padding: 0 20px;
+    }
+
+    .main-components .hero-left-title-one span {
+        font-size: 32px;
+        -webkit-text-stroke: 1.5px #000;
+    }
+
+        .blog-desc-content h4, .blog-desc-content h5, .blog-desc-content h6, .blog-desc-content h3, .blog-desc-content h2, .blog-desc-content h1 {
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 26px;
+    }
+
+        .blog-desc-content p {
+        font-size: 19px;
+        line-height: 31px;
+        margin-bottom: 35px;
+    }
+    .recently-grid-contain h6 {
+    font-size: 38px;
+    line-height: 47px;
+    margin-bottom: 52px;
+}
+    .blog-container{
+    width: 100%;
+}
+
+.blog-hero-banner .blog-banner {
+    height: 220px;
+}
+
+.blog-head-details .blog-heading {
+    font-size: 36px;
+    line-height: 50px;
+}
+.blog-header {
+    align-items: center;
+    justify-content: center;
+}
+
+.card-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+    .header-main {
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 30px;
+    }
+
+    .joy-main {
+        height: 100%;
+    }
+
+    .gamig-console-main .gamig-console-right {
+        object-fit: contain;
+        max-width: 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gamig-console-main {
+        padding: 120px 20px 75px;
+        gap: 20px;
+    }
+
+    .gamin-con-inner .next-gen-title {
+        font-size: 33px;
+        line-height: 44px;
+    }
+
+    .gamin-grid-sec .berachain-box-sec {
+        padding: 15px;
+    }
+
+    .joy-genesis-left .half-console-img {
+        max-width: 340px;
+    }
+
+    .joy-genesis-main .joy-genesis-inner {
+        gap: 0px;
+    }
+
+    .joy-genesis-left {
+        width: 48%;
+    }
+
+    .specification-sec,
+    .faq-sec {
+        padding: 130px 0 108px;
+    }
+
+    .specification-left-inner .main-title {
+        margin-bottom: 60px;
+    }
+
+    .aboutus-section .aboutus-inner-sec {
+        gap: 50px;
+        max-width: 90%;
+        flex-direction: column-reverse;
+    }
+
+    .footer-main {
+        padding: 100px 20px 25px;
+    }
+
+    .nft-checkout-inner .nft-checkout-left,
+    .nft-checkout-inner .nft-checkout-right {
+        width: 100%;
+    }
+
+    .nft-checkout-left .nft-checkout-content-sec {
+        padding-bottom: 50px;
+    }
+
+    .nft-checkout-inner .nft-checkout-right {
+        padding-top: 100px;
+    }
+
+    .specification-grid-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+
+    .specification-container {
+        max-width: 80%;
+    }
+
+
+    .specification-grid-box {
+        gap: 10px;
+    }
+
+    .specification-sec .specefication-icon {
+        position: unset;
+        width: 100%;
+        height: 150px;
+        object-fit: contain;
+    }
+
+    .prebook-genesis-details .prebook-genesis-text {
+        font-size: 70px;
+        line-height: 94.51px;
+    }
+
+    .prebook-container,
+    .keybenefits-container,
+    .processor-prebook-container {
+        width: 100%;
+    }
+
+    .footerjoin-content .youtline-title {
+        font-size: 41px;
+        line-height: 50px;
+    }
+
+    .prebook-genesis-details .prebook-desc-content {
+        font-size: 27px;
+    }
+
+    .prebook-genesis-details .prebook-join-title {
+        font-size: 20px;
+        line-height: 19.17px;
+    }
+
+    .keybenefits-grid {
+        grid-template-columns: 190px 1fr;
+        gap: 50px;
+    }
+
+    .grid-processor-main {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-left-processor .processor-img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .grid-left-processor {
+        text-align: center;
+    }
+
+    
+.search-box,
+.search-box input {
+    max-width: 100%;
+}
+.footer-inner-sec .email-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.video-text-sec {
+    bottom: 2.44em;
+    left: 2.17em;
+}
+.detail-slider-content {
+   flex-direction: column;
+}
+.grid-swiper-thumbs {
+        max-width: 100%;
+    }
+    .presale-grid-sec .presale-bg {
+        padding: 18.45px 15.31px;
+    }
+    .specification-bg .specification-title {
+    font-size: 20px;
+}
+    .specification-container {
+        max-width: 100%;
+    }
+    .timeline-tube.timeline-tube-three .tube-outer {
+    height: 230px;
+}
+    .timeline-text {
+        font-size: 36px;
+        line-height: 35px;
+    }
+    .prebook-processors {
+    padding: 80px 0px 0px;
+}
+    .youtline-title::after {
+        width: 130px;
+        height: 140px;
+    }
+    .gamepad-icon {
+    width: 100%;
+}
+.hero-con .web-3-text {
+    font-size: 44px;
+    line-height: 58px;
+}
+.join-wishlist-footer {
+    overflow: hidden;
+}
+.return-pl-sec {
+    max-width: 100%;
+}
+
+  .home-specification-sec .specification-sec .specefication-icon {
+    position: unset;
+        width: 100%;
+    height: unset;
+  }
+
+  .home-specification-sec .specification-grid-main{
+    grid-template-columns: 1fr;
+  }
+  .home-specification-sec .specification-container{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .home-specification-sec .specification-sec .specefication-icon {
+    position: unset;
+        width: 100%;
+    height: unset;
+  }
+
+  .home-specification-sec .specification-grid-main{
+    grid-template-columns: 1fr;
+  }
+  .home-specification-sec .specification-container{
+    max-width: 100%;
+            padding: 0px;
+  }
+
+  .home-specification-sec .specification-bg {
+    flex-basis: calc(35% - 6px);
+  }
+
+    .main-components .hero-left-title-one {
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 1px;
+        -webkit-text-stroke: 1px #000000;
+        padding: 0 15px;
+        top: 35%;
+    }
+
+    .main-components .hero-left-title-one span {
+        font-size: 24px;
+        -webkit-text-stroke: 1px #000;
+    }
+
+    .blog-desc-content h4, .blog-desc-content h5, .blog-desc-content h6, .blog-desc-content h3, .blog-desc-content h2, .blog-desc-content h1 {
+    font-size: 22px;
+    line-height: 38px;
+    margin-bottom: 24px;
+}
+
+.blog-details-main  .blog-hero-banner .blog-banner{
+    margin: 30px 0px 40px 0px;
+        height: 220px;
+}
+
+
+    .blog-desc-content p {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+
+    .recently-grid-contain h6 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 36px;
+}
+
+.blog-container{
+    width: 100%;
+}
+
+.blog-hero-banner .blog-banner {
+    height: 220px;
+}
+
+.blog-head-details .blog-heading {
+    font-size: 36px;
+    line-height: 50px;
+}
+
+    .blog-tabs-scroll {
+    gap: 40px;
+    }
+
+    .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+    }
+
+    .specification-container {
+        max-width: 100%;
+    }
+
+    .specification-bg {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .partners-inner .partners-grid-sec {
+        width: 100%;
+        height: auto;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gamig-console-main {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer-inner-sec .email-main {
+        flex-direction: column;
+    }
+
+    .email-main .email-input-wrap,
+    .email-main .email-main-left {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .gamig-console-main .gamin-console-left {
+        width: 100%;
+    }
+
+    .header-main .main-btn {
+        letter-spacing: 0;
+        padding: 9px 15px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .logo-sec img {
+        height: 30px;
+    }
+
+    .hero-con .web-3-text {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .hero-con .common-text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .joy-genesis-main .joy-genesis-inner {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .joy-genesis-left {
+        width: 100%;
+    }
+
+    .joy-genesis-con {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .main-title-sec .main-title {
+        font-size: 22px;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+
+    .common-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .cus-radio-btn .MuiSvgIcon-root {
+        font-size: 33px;
+    }
+
+    .joy-genesis-con .price-text {
+        font-size: 40px;
+        line-height: 53px;
+    }
+
+    .specification-left-inner .main-title {
+        padding-left: 0;
+    }
+
+
+
+    .specification-right-sec .specification-grid-sec {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .specification-sec .specification-inner-sec {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .joy-genesis-main,
+    .partners-main-sec,
+    .specification-sec,
+    .faq-sec,
+    .aboutus-section,
+    .footer-main {
+        padding: 50px 20px;
+    }
+
+    .gamig-console-main {
+        padding: 50px 20px 75px;
+    }
+
+    .gamin-con-inner .next-gen-title {
+        font-size: 30px;
+        line-height: 44px;
+    }
+
+    .gamig-console-main .gamig-console-right {
+        max-width: 100%;
+    }
+
+    .partners-grid-sec .partners-box:last-child {
+        display: none;
+    }
+
+    .aboutus-inner-right .aboutus-img {
+        max-width: 100%;
+    }
+
+    .aboutus-section .aboutus-inner-sec {
+        max-width: 100%;
+    }
+
+    .accordion-main-sec .accordion-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .accordion-main-sec summary {
+        font-size: 18px;
+    }
+
+    .email-main-right {
+        justify-content: center;
+    }
+
+    .footer-inner-sec .email-main {
+        gap: 30px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 30px;
+    }
+
+    .email-input-wrap .main-btn {
+        padding: 12px 15px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .email-input-wrap .admin-form-control input {
+        padding: 18px 145px 18px 20px;
+    }
+
+    .twitter-box .twitter-br-sec,
+    .telegram-box .telegram-br-sec, 
+    .discord-box .discord-br-sec {
+        width: 50px;
+        height: 50px;
+    }
+
+    .twitter-br-sec .twitter-bg-sec {
+        width: 39px;
+        height: 39px;
+    }
+
+    .footer-link-sec .footer-link-ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .joy-genesis-main {
+        padding: 50px 0;
+    }
+
+    .joy-main .joy-logo {
+        max-width: 30vw;
+    }
+
+    .gamepad-icon {
+        max-width: 70%;
+    }
+
+    .aboutus-inner-left .what-joy-main {
+        margin-top: 50px;
+    }
+
+    .cus-tabs .MuiTabs-flexContainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cus-tabs .cus-tab {
+        padding: 20px 77.5px;
+    }
+
+    .prebook-headline {
+        margin: 0 auto 20px auto;
+        padding: 0px 25px;
+    }
+
+    .prebook-headline::before {
+        width: 50px;
+        right: -50px;
+    }
+
+    .prebook-headline::after {
+        width: 50px;
+        left: -50px;
+    }
+
+    .prebook-headline .prebook-title {
+        font-size: 20px;
+        line-height: 57px;
+        letter-spacing: 1px;
+    }
+
+    .prebook-container,
+    .keybenefits-container,
+    .processor-prebook-container {
+        width: 100%;
+    }
+
+    .prebook-genesis-details .prebook-genesis-text {
+        font-size: 40px;
+        line-height: 64.51px;
+    }
+
+    .prebook-genesis-details .prebook-desc-content {
+        font-size: 20px;
+        line-height: 31px;
+    }
+
+    .prebook-genesis-details .prebook-join-title {
+        font-size: 15px;
+        line-height: 24.17px;
+    }
+
+    .container-join-footer {
+        width: 100%;
+        padding: 0px 15px;
+    }
+
+    .footerjoin-content .youtline-title,
+     .footerjoin-content .youtline-title span {
+        font-size: 25px;
+        line-height: 28px;
+        margin-bottom: 34px;
+    }
+
+
+    .footerjoin-content .your-desc-line {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+
+    .form-join-footer-max {
+        grid-template-columns: 1fr;
+    }
+
+    .copy-right-footer-bg {
+        padding: 25px 0px;
+    }
+
+    .copy-right-footer-bg p {
+        font-size: 8.09px;
+        line-height: 15.14px;
+    }
+
+    .grid-left-processor .processor-img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .grid-processor-box {
+        grid-template-columns: 1fr;
+    }
+
+    .keybenefits-grid,
+    .grid-processor-main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .join-btn-social {
+    flex-direction: column;
+     align-items: center;
+    gap: 30px;
+}
+.prebook-processors .specification-sec{
+    padding-bottom: 0;
+}
+.join-wishlist-footer {
+    /* background: #000000; */
+    padding: 20px 0px 60px;
+}
+.presale-inner-sec .presale-grid-sec {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+.presale-grid-sec .presale-bg{
+        justify-content: space-between;
+}
+     .presale-main-sec .small-title-text {
+        font-size: 24px;
+        line-height: 40px;
+    }
+     .presale-main-sec .small-title-text::before {
+        right: -34px;
+    }
+
+    .presale-main-sec .small-title-text::before {
+    width: 15px;
+    height: 15px;
+    }
+
+    .max-join-footer .curve-text-sec svg textPath {
+    font-size: 37px;
+    }
+    .presale-bg .specification-title {
+        font-size: 22px;
+    }
+    .cus-dot {
+    width: 28.9px;
+    height: 28.9px;
+}
+    .presale-grid-sec .presale-bg {
+        padding: 14.45px 15.31px;
+    }
+    .coming-soon-text {
+    font-size: 28px;
+    line-height: 30px;
+}
+.coming-soon-section {
+        margin-top: 20px;
+    }
+        .timeline-text {
+        font-size: 26px;
+        line-height: 28px;
+    }
+        .timeline-tube.timeline-tube-three .tube-outer {
+        height: 197px;
+    }
+        .coming-soon-br-sec .soon-br-one {
+        height: 783px;
+    }
+    .timeline-tube.timeline-tube-three .tube-outer {
+        height: 170px;
+    }
+        .footerjoin-content .youtline-title, .footerjoin-content .youtline-title span {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .youtline-title::after{
+        display: none;
+    }
+        .joy-img-main-sec .joy-img-inner-sec {
+        height: 180px;
+    }
+    .join-wishlist-footer .common-yellow-btn {
+    font-size: 25px;
+    padding: 13px 30px;
+    line-height: 39px;
+}
+.copy-right-footer-bg .footer-link-sec .footer-link-ul {
+    margin-bottom: 24px;
+}
+.copy-right-footer-bg .footer-link-sec .footer-link-ul {
+    gap: 20px;
+}
+.join-wishlist-footer .join-btn-social {
+    gap: 50px;
+}
+    .video-title-text {
+              font-size: 23px;
+        line-height: 39px;
+    }
+    .video-title-sub-text {
+    gap: 8.18px;
+       font-size: 26px;
+        line-height: 28px;
+        letter-spacing: -1px;
+}
+    .video-text-sec {
+        left: 1.17em;
+    }
+    .video-title-text {
+    letter-spacing: -1px;
+    }
+   .prebook-wishlist-details {
+    padding: 70px 0px 0;
+}
+    .genesis-rate-img {
+        max-width: 90px;
+            top: -130px;
+    }
+    .btn-border-three, .btn-border-two, .btn-border-one {
+    padding: 12.35px 14.96px;
+}
+.common-yellow-btn.join-waitlist-new {
+    font-size: 23px;
+    line-height: 30px;
+}
+.curve-text-sec svg {
+    height: 210px;
+}
+.max-join-footer .curve-text-sec svg {
+    margin-top: -70px;
+}
+.video-title-sub-text {
+    margin: 18.84px 0 0 0;
+    font-size: 24px;
+}
+.video-text-sec .step-progress-sec {
+    height: 10.15px;
+}
+.youtline-title::after, .max-join-footer .curve-text-sec::after{
+    display: none;
+}
+.curve-text-sec svg textPath {
+    font-size: 76px;
+}
+
+}
+
+@media (max-width: 480px) {
+    .main-components .hero-left-title-one {
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+        -webkit-text-stroke: 1px #000000;
+        padding: 0 10px;
+        top: 16%;
+    }
+
+    .main-components .hero-left-title-one span {
+        font-size: 18px;
+        -webkit-text-stroke: 1px #000;
+    }
+
+        .presale-main-sec .small-title-text {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+}
+
+@media  (max-width: 345px) {
+    .card-content{
+        flex-direction: column;
+    }
+
+    .main-components .hero-left-title-one {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        padding: 0 10px;
+    }
+
+    .main-components .hero-left-title-one span {
+        font-size: 16px;
+    }
+}

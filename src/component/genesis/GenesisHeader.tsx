@@ -6,7 +6,7 @@ const GenesisHeader = () => {
     <header className="genesis-header">
       <div className="genesis-container flex justify-between items-center py-6">
         <div className="genesis-logo">
-          <Image src="/joy-logo-v3.png" alt="JOY" width={60} height={60} priority />
+          <Image src="/joy-logo-final.png" alt="JOY" width={60} height={60} priority />
         </div>
         <div className="genesis-nav flex gap-6 items-center">
           <a

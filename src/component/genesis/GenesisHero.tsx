@@ -7,8 +7,8 @@ const GenesisHero = () => {
       <div className="genesis-container flex flex-col items-center text-center">
         <h1 className="genesis-h1 mb-8 w-full">JOY GENESIS</h1>
         <div className="hero-product-video mb-12 flex justify-center w-full relative">
-          {/* Background Glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-radial-glow opacity-30 blur-[100px] pointer-events-none"></div>
+          {/* Intense Radial Glow as seen in Screenshot 5 */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] bg-radial-glow opacity-40 blur-[100px] pointer-events-none"></div>
 
           <video
             src="https://playonjoy.com/renderjoy.mp4"
@@ -16,14 +16,14 @@ const GenesisHero = () => {
             loop
             muted
             playsInline
-            className="w-full max-w-5xl rounded-2xl shadow-2xl mx-auto"
-            style={{ borderRadius: '24px', boxShadow: '0 20px 50px rgba(0,0,0,0.5)' }}
+            className="w-full max-w-4xl rounded-2xl shadow-2xl mx-auto relative z-10"
+            style={{ borderRadius: '24px', boxShadow: '0 30px 100px rgba(0,0,0,0.9)' }}
           />
         </div>
 
         <div className="pre-book-cta flex flex-col items-center">
           <p className="genesis-body-text mb-6 uppercase tracking-widest text-genesis-accent">Community Card Sale Now Live</p>
-          <div className="cta-form mb-6 flex gap-4">
+          <div className="cta-form mb-8 flex gap-4">
             <input type="email" placeholder="Enter your email" className="cta-input" />
             <button className="main-btn genesis-cta-btn">Reserve Now</button>
           </div>
@@ -32,7 +32,7 @@ const GenesisHero = () => {
               href="https://hyperplay.xyz"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-80 transition-opacity"
+              className="flex items-center gap-3 no-underline hover:opacity-80 transition-opacity"
             >
               <Image src="/hyperplay-logo-v3.png" alt="JOY OS powered by Hyperplay" width={220} height={40} className="object-contain" />
             </a>

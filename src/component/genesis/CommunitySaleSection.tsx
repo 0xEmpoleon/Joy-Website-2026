@@ -14,10 +14,6 @@ const CommunitySaleSection = () => {
         </div>
       </div>
 
-      {/* Floating 3D Device Render to fill negative space */}
-      <div className="absolute right-[-5%] bottom-[-10%] w-[50%] opacity-30 floating-asset pointer-events-none">
-        <img src="/gamepad.png" alt="JOY Device" className="w-full h-auto rotate-12" />
-      </div>
 
       <style jsx>{`
         .py-32 { padding: 10rem 0; }

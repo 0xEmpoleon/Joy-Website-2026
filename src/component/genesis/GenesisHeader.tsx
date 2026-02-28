@@ -2,27 +2,27 @@ import React from 'react';
 import Image from 'next/image';
 
 const GenesisHeader = () => {
-    return (
-        <header className="genesis-header">
-            <div className="genesis-container flex justify-between items-center py-6">
-                <div className="genesis-logo">
-                    <h2 className="genesis-h2" style={{ fontSize: '1.5rem', marginBottom: 0 }}>JOY</h2>
-                </div>
-                <div className="genesis-nav flex gap-6 items-center">
-                    <a
-                        href="https://v0-joyconsole.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="genesis-nav-link"
-                    >
-                        3D Skinned Devices
-                    </a>
-                    <button className="genesis-mint-btn">
-                        Mint NFT
-                    </button>
-                </div>
-            </div>
-            <style jsx>{`
+  return (
+    <header className="genesis-header">
+      <div className="genesis-container flex justify-between items-center py-6">
+        <div className="genesis-logo">
+          <Image src="/joy-logo.png" alt="JOY" width={44} height={44} priority />
+        </div>
+        <div className="genesis-nav flex gap-6 items-center">
+          <a
+            href="https://v0-joyconsole.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="genesis-nav-link"
+          >
+            3D Skinned Devices
+          </a>
+          <button className="genesis-mint-btn">
+            Mint NFT
+          </button>
+        </div>
+      </div>
+      <style jsx>{`
         .genesis-header {
           position: fixed;
           top: 0;
@@ -68,8 +68,8 @@ const GenesisHeader = () => {
           box-shadow: 0 0 15px var(--genesis-accent-glow);
         }
       `}</style>
-        </header>
-    );
+    </header>
+  );
 };
 
 export default GenesisHeader;

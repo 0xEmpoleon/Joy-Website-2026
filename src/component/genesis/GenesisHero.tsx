@@ -29,10 +29,22 @@ const GenesisHero = () => {
       </div>
 
       <style jsx>{`
+        .flex { display: flex; }
+        .flex-col { flex-direction: column; }
+        .justify-center { justify-content: center; }
+        .items-center { align-items: center; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .w-full { width: 100%; }
+        .max-w-5xl { max-width: 64rem; }
+
         .genesis-hero {
-          padding-top: 15rem;
-          padding-bottom: 10rem;
+          padding-top: 12rem;
+          padding-bottom: 8rem;
           position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 80vh;
         }
         .mb-8 { margin-bottom: 2rem; }
         .mb-12 { margin-bottom: 3rem; }

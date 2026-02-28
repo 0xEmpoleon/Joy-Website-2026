@@ -16,7 +16,7 @@
 .genesis-body {
     background-color: var(--genesis-bg);
     color: var(--genesis-text-primary);
-    font-family: 'Inter', 'InstrumentSans-Medium', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     overflow-x: hidden;
 }
 
@@ -60,23 +60,26 @@
 
 /* Typography */
 .genesis-h1 {
-    font-family: 'Twobit-Bold', 'Inter', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
     font-size: 5rem;
     line-height: 1;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.05em;
     color: var(--genesis-text-primary);
     text-transform: uppercase;
+    text-align: center;
 }
 
 .genesis-h2 {
-    font-family: 'SourceCodePro-Bold', 'Inter', monospace;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
     font-size: 2.5rem;
     color: var(--genesis-text-primary);
     letter-spacing: -0.02em;
 }
 
 .genesis-body-text {
-    font-family: 'InstrumentSans-Medium', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.125rem;
     line-height: 1.6;
     color: var(--genesis-text-secondary);

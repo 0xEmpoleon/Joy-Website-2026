@@ -116,264 +116,39 @@ const HomePage = () => {
       });
 
       // 0. Text Animation Sequence - Show each text one by one
+      const textRefs = [textAnimOneRef, textAnimTwoRef, textAnimThreeRef, textAnimFourRef, textAnimFiveRef];
 
-      // Text-anim-one: Show (left to right)
-      ScrollTrigger.create({
-        trigger: mainRef.current,
-        start: "top top",
-        end: "5% top",
-        onEnter: () => {
-          if (textAnimOneRef.current) {
-            gsap.killTweensOf(textAnimOneRef.current);
-            gsap.set(textAnimOneRef.current, {
-              visibility: "visible",
-              x: -100,
-            });
-            gsap.to(textAnimOneRef.current, {
-              opacity: 1,
-              x: 0,
-              duration: 0.8,
-              ease: "power2.out",
-              overwrite: true,
-            });
-          }
-        },
-        onLeaveBack: () => {
-          if (textAnimOneRef.current) {
-            gsap.killTweensOf(textAnimOneRef.current);
-            gsap.to(textAnimOneRef.current, {
-              opacity: 0,
-              x: -100,
-              duration: 0.5,
-              overwrite: true,
-            });
-          }
-        },
-      });
+      textRefs.forEach((ref, index) => {
+        const startPercent = index * 10;
+        const endPercent = startPercent + 5;
 
-      // Hide text-anim-one and show text-anim-two (right to left)
-      ScrollTrigger.create({
-        trigger: mainRef.current,
-        start: "10% top",
-        onEnter: () => {
-          if (textAnimOneRef.current) {
-            gsap.killTweensOf(textAnimOneRef.current);
-            gsap.to(textAnimOneRef.current, {
-              opacity: 0,
-              x: -100,
-              duration: 0.5,
-              overwrite: true,
-            });
+        ScrollTrigger.create({
+          trigger: mainRef.current,
+          start: `${startPercent}% top`,
+          end: `${endPercent}% top`,
+          onEnter: () => {
+            if (ref.current) {
+              gsap.killTweensOf(ref.current);
+              gsap.set(ref.current, { visibility: "visible", x: index % 2 === 0 ? -100 : 100 });
+              gsap.to(ref.current, { opacity: 1, x: 0, duration: 0.8, ease: "power2.out", overwrite: true });
+            }
+          },
+          onLeave: () => {
+            if (ref.current) {
+              gsap.to(ref.current, { opacity: 0, x: index % 2 === 0 ? -100 : 100, duration: 0.5, overwrite: true });
+            }
+          },
+          onEnterBack: () => {
+            if (ref.current) {
+              gsap.to(ref.current, { opacity: 1, x: 0, duration: 0.8, ease: "power2.out", overwrite: true });
+            }
+          },
+          onLeaveBack: () => {
+            if (ref.current) {
+              gsap.to(ref.current, { opacity: 0, x: index % 2 === 0 ? -100 : 100, duration: 0.5, overwrite: true });
+            }
           }
-          if (textAnimTwoRef.current) {
-            gsap.killTweensOf(textAnimTwoRef.current);
-            gsap.set(textAnimTwoRef.current, { visibility: "visible", x: 100 });
-            gsap.to(textAnimTwoRef.current, {
-              opacity: 1,
-              x: 0,
-              duration: 0.8,
-              overwrite: true,
-            });
-          }
-        },
-        onLeaveBack: () => {
-          if (textAnimOneRef.current) {
-            gsap.killTweensOf(textAnimOneRef.current);
-            gsap.to(textAnimOneRef.current, {
-              opacity: 1,
-              x: 0,
-              duration: 0.8,
-              overwrite: true,
-            });
-          }
-          if (textAnimTwoRef.current) {
-            gsap.killTweensOf(textAnimTwoRef.current);
-            gsap.to(textAnimTwoRef.current, {
-              opacity: 0,
-              x: 100,
-              duration: 0.5,
-              overwrite: true,
-            });
-          }
-        },
-      });
-
-      // Hide text-anim-two and show text-anim-three (left to right)
-      ScrollTrigger.create({
-        trigger: mainRef.current,
-        start: "20% top",
-        onEnter: () => {
-          if (textAnimTwoRef.current) {
-            gsap.killTweensOf(textAnimTwoRef.current);
-            gsap.to(textAnimTwoRef.current, {
-              opacity: 0,
-              x: 100,
-              duration: 0.5,
-              overwrite: true,
-            });
-          }
-          if (textAnimThreeRef.current) {
-            gsap.killTweensOf(textAnimThreeRef.current);
-            gsap.set(textAnimThreeRef.current, {
-              visibility: "visible",
-              x: -100,
-            });
-            gsap.to(textAnimThreeRef.current, {
-              opacity: 1,
-              x: 0,
-              duration: 0.8,
-              overwrite: true,
-            });
-          }
-        },
-        onLeaveBack: () => {
-          if (textAnimTwoRef.current) {
-            gsap.killTweensOf(textAnimTwoRef.current);
-            gsap.to(textAnimTwoRef.current, {
-              opacity: 1,
-              x: 0,
-              duration: 0.8,
-              overwrite: true,
-            });
-          }
-          if (textAnimThreeRef.current) {
-            gsap.killTweensOf(textAnimThreeRef.current);
-            gsap.to(textAnimThreeRef.current, {
-              opacity: 0,
-              x: -100,
-              duration: 0.5,
-              overwrite: true,
-            });
-          }
-        },
-      });
-
-      // Hide text-anim-three and show text-anim-four (right to left)
-      ScrollTrigger.create({
-        trigger: mainRef.current,
-        start: "30% top",
-        onEnter: () => {
-          if (textAnimThreeRef.current) {
-            gsap.killTweensOf(textAnimThreeRef.current);
-            gsap.to(textAnimThreeRef.current, {
-              opacity: 0,
-              x: -100,
-              duration: 0.5,
-              overwrite: true,
-            });
-          }
-          if (textAnimFourRef.current) {
-            gsap.killTweensOf(textAnimFourRef.current);
-            gsap.set(textAnimFourRef.current, {
-              visibility: "visible",
-              x: 100,
-            });
-            gsap.to(textAnimFourRef.current, {
-              opacity: 1,
-              x: 0,
-              duration: 0.8,
-              overwrite: true,
-            });
-          }
-        },
-        onLeaveBack: () => {
-          if (textAnimThreeRef.current) {
-            gsap.killTweensOf(textAnimThreeRef.current);
-            gsap.to(textAnimThreeRef.current, {
-              opacity: 1,
-              x: 0,
-              duration: 0.8,
-              overwrite: true,
-            });
-          }
-          if (textAnimFourRef.current) {
-            gsap.killTweensOf(textAnimFourRef.current);
-            gsap.to(textAnimFourRef.current, {
-              opacity: 0,
-              x: 100,
-              duration: 0.5,
-              overwrite: true,
-            });
-          }
-        },
-      });
-
-      // Hide text-anim-four and show text-anim-five (left to right)
-      ScrollTrigger.create({
-        trigger: mainRef.current,
-        start: "40% top",
-        onEnter: () => {
-          if (textAnimFourRef.current) {
-            gsap.killTweensOf(textAnimFourRef.current);
-            gsap.to(textAnimFourRef.current, {
-              opacity: 0,
-              x: 100,
-              duration: 0.5,
-              overwrite: true,
-            });
-          }
-          if (textAnimFiveRef.current) {
-            gsap.killTweensOf(textAnimFiveRef.current);
-            gsap.set(textAnimFiveRef.current, {
-              visibility: "visible",
-              x: -100,
-            });
-            gsap.to(textAnimFiveRef.current, {
-              opacity: 1,
-              x: 0,
-              duration: 0.8,
-              overwrite: true,
-            });
-          }
-        },
-        onLeaveBack: () => {
-          if (textAnimFourRef.current) {
-            gsap.killTweensOf(textAnimFourRef.current);
-            gsap.to(textAnimFourRef.current, {
-              opacity: 1,
-              x: 0,
-              duration: 0.8,
-              overwrite: true,
-            });
-          }
-          if (textAnimFiveRef.current) {
-            gsap.killTweensOf(textAnimFiveRef.current);
-            gsap.to(textAnimFiveRef.current, {
-              opacity: 0,
-              x: -100,
-              duration: 0.5,
-              overwrite: true,
-            });
-          }
-        },
-      });
-
-      // Hide text-anim-five
-      ScrollTrigger.create({
-        trigger: mainRef.current,
-        start: "50% top",
-        onEnter: () => {
-          if (textAnimFiveRef.current) {
-            gsap.killTweensOf(textAnimFiveRef.current);
-            gsap.to(textAnimFiveRef.current, {
-              opacity: 0,
-              x: -100,
-              duration: 0.5,
-              overwrite: true,
-            });
-          }
-        },
-        onLeaveBack: () => {
-          if (textAnimFiveRef.current) {
-            gsap.killTweensOf(textAnimFiveRef.current);
-            gsap.to(textAnimFiveRef.current, {
-              opacity: 1,
-              x: 0,
-              duration: 0.8,
-              overwrite: true,
-            });
-          }
-        },
+        });
       });
 
       // 1. Initial Joy Logo scaling (already working)
@@ -871,58 +646,33 @@ const HomePage = () => {
   const [partners, setPartners] = useState<Partner[]>([]);
   const [error, setError] = useState<string | null>(null);
 
-  const getHeroTitle = async () => {
-    try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-      const response = await fetch(`${apiUrl}/api/hero-section`);
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      const data: HeroData[] = await response.json();
-      console.log("API Response:", data);
-
-      if (Array.isArray(data) && data.length > 0) {
-        setHeroData(data[0]); // ✅ store a single object
-      }
-    } catch (err) {
-      console.error("Error fetching content:", err);
-    } finally {
-      // setLoading(false);
-    }
-  };
-
   useEffect(() => {
-    getHeroTitle();
-  }, []);
+    const fetchData = async () => {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8052";
 
-  useEffect(() => {
-    const fetchPartners = async () => {
       try {
-        const apiUrl =
-          process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
-        const response = await fetch(`${apiUrl}/api/partners?limit=100`);
+        const [heroRes, partnersRes] = await Promise.all([
+          fetch(`${apiUrl}/api/hero-section`).then(res => res.ok ? res.json() : null),
+          fetch(`${apiUrl}/api/partners?limit=100`).then(res => res.ok ? res.json() : { partners: [] })
+        ]);
 
-        if (!response.ok) {
-          throw new Error("Failed to fetch partners");
+        if (Array.isArray(heroRes) && heroRes.length > 0) {
+          setHeroData(heroRes[0]);
         }
 
-        const data = await response.json();
-        // Filter only active partners
-        const activePartners = data.partners.filter(
-          (p: Partner) => p.status === "active"
-        );
-        setPartners(activePartners);
+        if (partnersRes && partnersRes.partners) {
+          const activePartners = partnersRes.partners.filter(
+            (p: Partner) => p.status === "active"
+          );
+          setPartners(activePartners);
+        }
       } catch (err) {
+        console.error("Error fetching homepage data:", err);
         setError(err instanceof Error ? err.message : "An error occurred");
-        console.error("Error fetching partners:", err, error);
-      } finally {
-        // setLoading(false);
       }
     };
 
-    fetchPartners();
+    fetchData();
   }, []);
 
   return (
@@ -1050,6 +800,7 @@ const HomePage = () => {
                 width={1000}
                 height={400}
                 className="gamepad-icon"
+                priority
                 alt="gamepad"
               />
             </div>
@@ -1104,10 +855,6 @@ const HomePage = () => {
             muted
             loop
             playsInline
-            preload="auto"
-            controlsList="nodownload nofullscreen noremoteplayback"
-            disablePictureInPicture
-            webkit-playsinline
           >
             Your browser does not support the video tag.
           </video>

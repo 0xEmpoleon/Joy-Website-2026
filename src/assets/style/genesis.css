@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+:root {
+    --genesis-bg: #000000;
+    --genesis-card-bg: #0A0A0A;
+    --genesis-border: #1A1A1A;
+    --genesis-text-primary: #FFFFFF;
+    --genesis-text-secondary: #888888;
+    --genesis-accent: #EDFFAD;
+    /* Signal Lime */
+    --genesis-accent-glow: rgba(237, 255, 173, 0.15);
+    --genesis-blue-glow: rgba(39, 114, 237, 0.2);
+    /* Keep some blue glow for premium feel if needed */
+}
+
+.genesis-body {
+    background-color: var(--genesis-bg);
+    color: var(--genesis-text-primary);
+    font-family: 'Inter', 'InstrumentSans-Medium', sans-serif;
+    overflow-x: hidden;
+}
+
+.genesis-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Base Widget/Card Style */
+.genesis-widget {
+    background: var(--genesis-card-bg);
+    border: 1px solid var(--genesis-border);
+    border-radius: 12px;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.genesis-widget:hover {
+    transform: translateY(-4px);
+    border-color: var(--genesis-accent);
+}
+
+.genesis-widget::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at top left, var(--genesis-accent-glow), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.genesis-widget:hover::after {
+    opacity: 1;
+}
+
+/* Typography */
+.genesis-h1 {
+    font-family: 'Twobit-Bold', 'Inter', sans-serif;
+    font-size: 5rem;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: var(--genesis-text-primary);
+    text-transform: uppercase;
+}
+
+.genesis-h2 {
+    font-family: 'SourceCodePro-Bold', 'Inter', monospace;
+    font-size: 2.5rem;
+    color: var(--genesis-text-primary);
+    letter-spacing: -0.02em;
+}
+
+.genesis-body-text {
+    font-family: 'InstrumentSans-Medium', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--genesis-text-secondary);
+}
+
+/* Grid System */
+.genesis-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.col-span-12 {
+    grid-column: span 12;
+}
+
+.col-span-8 {
+    grid-column: span 8;
+}
+
+.col-span-6 {
+    grid-column: span 6;
+}
+
+.col-span-4 {
+    grid-column: span 4;
+}
+
+.col-span-3 {
+    grid-column: span 3;
+}
+
+@media (max-width: 1024px) {
+
+    .col-span-8,
+    .col-span-6,
+    .col-span-4,
+    .col-span-3 {
+        grid-column: span 6;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .col-span-12,
+    .col-span-8,
+    .col-span-6,
+    .col-span-4,
+    .col-span-3 {
+        grid-column: span 12;
+    }
+}

@@ -19,7 +19,7 @@ interface Feature {
 interface ProductFeatures {
   mainImage: string;
   featureSections: Feature[];
-  description:string;
+  description: string;
 }
 
 const GenSpecification = () => {
@@ -100,9 +100,9 @@ const GenSpecification = () => {
     return () => ctx.revert();
   }, [data]);
   // unused so commented
-    // const handlePreOrderClick = () => {
-    //     router.push("/pre-book");
-    // };
+  // const handlePreOrderClick = () => {
+  //     router.push("/pre-book");
+  // };
 
   if (loading) {
     return (
@@ -124,7 +124,15 @@ const GenSpecification = () => {
     );
   }
 
-  const mainImg = data.mainImage || Png.specefication;
+  const getImageUrl = (url?: string) => {
+    if (!url) return Png.specefication;
+    if (url.startsWith("http")) return url;
+    const base = API_BASE.replace(/\/$/, "");
+    const path = url.startsWith("/") ? url : `/${url}`;
+    return `${base}${path}`;
+  };
+
+  const mainImgUrl = getImageUrl((data as any).mainImage || (data as any).mainImg);
 
   return (
     <div className="specification-sec">
@@ -135,7 +143,7 @@ const GenSpecification = () => {
               <div className="left-specification-content">
                 <Image
                   // ref={specIconRef}
-                  src={API_BASE + mainImg}
+                  src={mainImgUrl}
                   width={741}
                   height={318}
                   className="specefication-icon"
@@ -145,7 +153,7 @@ const GenSpecification = () => {
               </div>
 
               <div className="right-specification-content">
-                <div className="specification-grid-box" 
+                <div className="specification-grid-box"
                 // ref={gridBoxRef}
                 >
                   {data.featureSections
@@ -161,7 +169,7 @@ const GenSpecification = () => {
                             section.images.map((imgUrl, i) => (
                               <Image
                                 key={i}
-                                src={API_BASE + imgUrl}
+                                src={getImageUrl(imgUrl)}
                                 width={32}
                                 height={32}
                                 className="small-spec-icon"

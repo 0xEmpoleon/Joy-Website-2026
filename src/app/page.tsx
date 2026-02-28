@@ -1,9 +1,9 @@
-import HomePage from "../component/pages/HomePage";
+import GenesisLandingPage from "../component/pages/GenesisLandingPage";
 
 function UserMain() {
   return (
     <>
-      <HomePage />
+      <GenesisLandingPage />
     </>
   );
 }

@@ -2,19 +2,24 @@ import React from 'react';
 import Widget from './Widget';
 
 const CommunitySaleSection = () => {
-    return (
-        <section className="community-sale py-32">
-            <div className="genesis-container">
-                <div className="sale-content text-center max-width-800">
-                    <h2 className="genesis-h2 mb-8 accent-text">Community Card Sale. JOY Genesis</h2>
-                    <p className="genesis-h1 large-hero">Sleek not meek.</p>
-                    <p className="genesis-body-text mt-8 light-text">
-                        Play indie gems, retro classics, and AAA on-chain games all on one powerful handheld gaming computer.
-                    </p>
-                </div>
-            </div>
+  return (
+    <section className="community-sale py-24 relative overflow-hidden">
+      <div className="genesis-container relative z-10">
+        <div className="sale-content text-left max-width-800" style={{ margin: '0 0' }}>
+          <h2 className="genesis-h2 mb-4 accent-text" style={{ textAlign: 'left', fontSize: '1.25rem' }}>Community Card Sale. JOY Genesis</h2>
+          <h2 className="genesis-h1 large-hero" style={{ textAlign: 'left', marginBottom: '2rem', fontSize: '5rem' }}>Sleek not meek.</h2>
+          <p className="genesis-body-text mt-8 light-text" style={{ textAlign: 'left', margin: '0 0', maxWidth: '600px', fontSize: '1.25rem' }}>
+            Play indie gems, retro classics, and AAA on-chain games all on one powerful handheld gaming computer.
+          </p>
+        </div>
+      </div>
 
-            <style jsx>{`
+      {/* Floating 3D Device Render to fill negative space */}
+      <div className="absolute right-[-5%] bottom-[-10%] w-[50%] opacity-30 floating-asset pointer-events-none">
+        <img src="/gamepad.png" alt="JOY Device" className="w-full h-auto rotate-12" />
+      </div>
+
+      <style jsx>{`
         .py-32 { padding: 10rem 0; }
         .max-width-800 { max-width: 900px; margin: 0 auto; }
         .accent-text { 
@@ -35,8 +40,8 @@ const CommunitySaleSection = () => {
           margin: 2rem auto;
         }
       `}</style>
-        </section>
-    );
+    </section>
+  );
 };
 
 export default CommunitySaleSection;

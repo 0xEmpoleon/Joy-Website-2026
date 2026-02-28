@@ -3,8 +3,8 @@ import Widget from './Widget';
 
 const VerbatimSections = () => {
     return (
-        <section className="genesis-verbatim py-24">
-            <div className="genesis-container">
+        <section className="genesis-verbatim py-12 relative">
+            <div className="genesis-container relative z-10">
                 <div className="genesis-grid">
                     {/* About Us */}
                     <Widget gridSpan="col-span-6" className="verbatim-card">
@@ -24,6 +24,11 @@ const VerbatimSections = () => {
                         </p>
                     </Widget>
                 </div>
+            </div>
+
+            {/* Floating 3D Device Render for Verbatim Section */}
+            <div className="absolute left-[-10%] top-[20%] w-[40%] opacity-20 floating-asset pointer-events-none" style={{ animationDelay: '-3s' }}>
+                <img src="/gamepad.png" alt="JOY Device" className="w-full h-auto -rotate-12" />
             </div>
 
             <style jsx>{`

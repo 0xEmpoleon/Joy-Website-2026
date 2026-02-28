@@ -4,27 +4,33 @@ import Image from 'next/image';
 const GenesisHero = () => {
   return (
     <section className="genesis-hero">
-      <div className="genesis-container text-center">
-        <h1 className="genesis-h1 mb-8">JOY GENESIS</h1>
-        <div className="hero-product-video mb-12">
+      <div className="genesis-container flex flex-col items-center text-center">
+        <h1 className="genesis-h1 mb-8 w-full">JOY GENESIS</h1>
+        <div className="hero-product-video mb-12 flex justify-center w-full">
           <video
             src="https://playonjoy.com/renderjoy.mp4"
             autoPlay
             loop
             muted
             playsInline
-            className="w-full max-w-4xl rounded-2xl shadow-2xl"
+            className="w-full max-w-5xl rounded-2xl shadow-2xl mx-auto"
             style={{ borderRadius: '24px', boxShadow: '0 20px 50px rgba(0,0,0,0.5)' }}
           />
         </div>
 
-        <div className="pre-book-cta">
-          <p className="genesis-body-text mb-6">PRE-BOOK THE FUTURE OF GAMING</p>
-          <div className="cta-form mb-4">
+        <div className="pre-book-cta flex flex-col items-center">
+          <p className="genesis-body-text mb-6 uppercase tracking-widest text-genesis-accent">Community Card Sale Now Live</p>
+          <div className="cta-form mb-8 flex gap-4">
             <input type="email" placeholder="Enter your email" className="cta-input" />
             <button className="main-btn genesis-cta-btn">Reserve Now</button>
           </div>
-          <p className="powered-by-text">Powered by Hyperplay</p>
+          <div className="hyperplay-branding flex flex-col items-center gap-2">
+            <span className="text-xs uppercase tracking-widest opacity-50">JOY OS powered by</span>
+            <div className="flex items-center gap-2">
+              <Image src="/globe.svg" alt="Hyperplay" width={20} height={20} className="invert opacity-80" />
+              <span className="font-bold tracking-tighter text-xl">HyperPlay</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -38,13 +44,13 @@ const GenesisHero = () => {
         .max-w-5xl { max-width: 64rem; }
 
         .genesis-hero {
-          padding-top: 12rem;
-          padding-bottom: 8rem;
+          padding-top: 8rem;
+          padding-bottom: 6rem;
           position: relative;
           display: flex;
           justify-content: center;
           align-items: center;
-          min-height: 80vh;
+          min-height: 70vh;
         }
         .mb-8 { margin-bottom: 2rem; }
         .mb-12 { margin-bottom: 3rem; }

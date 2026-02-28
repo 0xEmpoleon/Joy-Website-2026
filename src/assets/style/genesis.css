@@ -13,6 +13,29 @@
     /* Keep some blue glow for premium feel if needed */
 }
 
+.text-genesis-accent {
+    color: var(--genesis-accent) !important;
+}
+
+.floating-asset {
+    pointer-events: none;
+    z-index: 1;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.8));
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
 .genesis-body {
     background-color: var(--genesis-bg);
     color: var(--genesis-text-primary);

@@ -6,7 +6,10 @@ const GenesisHero = () => {
     <section className="genesis-hero">
       <div className="genesis-container flex flex-col items-center text-center">
         <h1 className="genesis-h1 mb-8 w-full">JOY GENESIS</h1>
-        <div className="hero-product-video mb-12 flex justify-center w-full">
+        <div className="hero-product-video mb-12 flex justify-center w-full relative">
+          {/* Background Glow */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-radial-glow opacity-30 blur-[100px] pointer-events-none"></div>
+
           <video
             src="https://playonjoy.com/renderjoy.mp4"
             autoPlay
@@ -20,16 +23,19 @@ const GenesisHero = () => {
 
         <div className="pre-book-cta flex flex-col items-center">
           <p className="genesis-body-text mb-6 uppercase tracking-widest text-genesis-accent">Community Card Sale Now Live</p>
-          <div className="cta-form mb-8 flex gap-4">
+          <div className="cta-form mb-6 flex gap-4">
             <input type="email" placeholder="Enter your email" className="cta-input" />
             <button className="main-btn genesis-cta-btn">Reserve Now</button>
           </div>
-          <div className="hyperplay-branding flex flex-col items-center gap-2">
-            <span className="text-xs uppercase tracking-widest opacity-50">JOY OS powered by</span>
-            <div className="flex items-center gap-2">
-              <Image src="/globe.svg" alt="Hyperplay" width={20} height={20} className="invert opacity-80" />
-              <span className="font-bold tracking-tighter text-xl">HyperPlay</span>
-            </div>
+          <div className="hyperplay-branding">
+            <a
+              href="https://hyperplay.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity"
+            >
+              <Image src="/hyperplay-logo-v3.png" alt="JOY OS powered by Hyperplay" width={220} height={40} className="object-contain" />
+            </a>
           </div>
         </div>
       </div>

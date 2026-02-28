@@ -6,6 +6,14 @@ const VerbatimSections = () => {
         <section className="genesis-verbatim py-12 relative">
             <div className="genesis-container relative z-10">
                 <div className="genesis-grid">
+                    {/* What is Joy */}
+                    <Widget gridSpan="col-span-6" className="verbatim-card">
+                        <h2 className="genesis-h2 mb-6">What is Joy</h2>
+                        <p className="genesis-body-text">
+                            JOY Genesis is the first Web3 gaming console capable of playing your beloved AAA titles and indie games. Optimised for the future of gaming, the device is powered by <strong>Joy Game OS powered by Hyperplay</strong>, and fully equipped with a camera and hardware wallet embedded for on-device identity and ownership. Discover the greatest of on-chain games, engage to earn with Joy’s ecosystem, and have a stake in the gaming communities you live and breathe in.
+                        </p>
+                    </Widget>
+
                     {/* About Us */}
                     <Widget gridSpan="col-span-6" className="verbatim-card">
                         <h2 className="genesis-h2 mb-6">About Us</h2>
@@ -15,20 +23,7 @@ const VerbatimSections = () => {
                             Joy Studios is our native gaming IP house and our team directly supports all Joy Ecosystem games alongside the wider Web3 gaming economy. We never stop gaming; we get gamers.
                         </p>
                     </Widget>
-
-                    {/* What is Joy */}
-                    <Widget gridSpan="col-span-6" className="verbatim-card">
-                        <h2 className="genesis-h2 mb-6">What is Joy</h2>
-                        <p className="genesis-body-text">
-                            JOY Genesis is the first Web3 gaming console capable of playing your beloved AAA titles and indie games. Optimised for the future of gaming, the device is powered by <strong>Joy Game OS powered by Hyperplay</strong>, and fully equipped with a camera and hardware wallet embedded for on-device identity and ownership. Discover the greatest of on-chain games, engage to earn with Joy’s ecosystem, and have a stake in the gaming communities you live and breathe in.
-                        </p>
-                    </Widget>
                 </div>
-            </div>
-
-            {/* Floating 3D Device Render for Verbatim Section */}
-            <div className="absolute left-[-10%] top-[20%] w-[40%] opacity-20 floating-asset pointer-events-none" style={{ animationDelay: '-3s' }}>
-                <img src="/gamepad.png" alt="JOY Device" className="w-full h-auto -rotate-12" />
             </div>
 
             <style jsx>{`

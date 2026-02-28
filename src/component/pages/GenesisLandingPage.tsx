@@ -41,10 +41,14 @@ const GenesisLandingPage = () => {
       <GenesisHeader />
       <main className="genesis-main">
         <GenesisHero />
-        <ScrollingPartners />
+        <div style={{ marginTop: '-4rem' }}>
+          <ScrollingPartners />
+        </div>
         <CommunitySaleSection />
         <HardwareSpecGrid />
-        <VerbatimSections />
+        <div style={{ marginTop: '-4rem' }}>
+          <VerbatimSections />
+        </div>
       </main>
       <Footer />
 

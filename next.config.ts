@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'standalone', // <--- REQUIRED for PM2 deployment
   eslint: {
     ignoreDuringBuilds: true, // ⛔ Skip eslint at build time
   },

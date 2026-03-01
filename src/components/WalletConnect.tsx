@@ -168,7 +168,7 @@ export default function WalletConnect({ onConnect, onDisconnect }: WalletConnect
         }
 
         .wallet-address {
-          font-family: monospace;
+          font-family: sans-serif;
           font-size: 1.1rem;
           font-weight: 600;
         }

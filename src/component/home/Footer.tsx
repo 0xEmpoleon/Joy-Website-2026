@@ -424,6 +424,7 @@ function Footer() {
 
               <div className="email-main">
                 <div className="email-main-left" ref={emailMainLeftRef}>
+                  <p className="common-text mb-4" style={{ marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: '0.8rem' }}>Get the latest news</p>
                   <form onSubmit={handleSubscribe}>
                     <div className="admin-input-div email-input-wrap">
                       <div className="admin-form-group">
@@ -466,7 +467,6 @@ function Footer() {
                       </p>
                     )}
                   </form>
-                  <p className="common-text">Get the latest news</p>
                 </div>
 
                 <div className="email-main-right" ref={emailMainRightRef}>
@@ -486,7 +486,6 @@ function Footer() {
                         />
                       </div>
                     </div>
-                    <p className="common-text">X</p>
                   </Link>
 
                   <Link
@@ -506,7 +505,6 @@ function Footer() {
                         />
                       </div>
                     </div>
-                    <p className="common-text">Telegram</p>
                   </Link>
 
                   <Link
@@ -525,7 +523,6 @@ function Footer() {
                         />
                       </div>
                     </div>
-                    <p className="common-text">Discord</p>
                   </Link>
                 </div>
               </div>

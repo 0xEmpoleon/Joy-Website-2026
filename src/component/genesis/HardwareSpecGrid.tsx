@@ -1,66 +1,95 @@
 import React from 'react';
 import Widget from './Widget';
 import Image from 'next/image';
+import Png from '@/assets/Png';
 
 const specs = [
   { label: 'Display', value: '7 Inch IPS Display', icon: 'monitor' },
-  { label: 'Control', value: 'Hall Effect Joystick(s)', icon: 'gamepad' },
-  { label: 'OS', value: 'Joy Game OS powered by Hyperplay', icon: 'settings', gridSpan: 'col-span-12' },
-  { label: 'Wireless', value: 'WiFi 6E & Bluetooth 5.2', icon: 'wifi', gridSpan: 'col-span-8' },
+  { label: 'Processor', value: 'AMD Ryzen 7 5825U', icon: 'cpu' },
+  { label: 'Graphics', value: 'AMD Radeon Graphics', icon: 'gamepad' },
+  { label: 'OS', value: 'Hyperplay OS', icon: 'settings', gridSpan: 'col-span-8' },
+  { label: 'Memory', value: '16GB LPDDR4x', icon: 'cpu' },
   { label: 'Storage', value: '512GB SSD', icon: 'hard-drive' },
-  { label: 'Memory', value: '16GB LPDDR4x RAM', icon: 'cpu' },
-  { label: 'Connectivity', value: 'Type-C Port & 3.5mm Jack', icon: 'usb', gridSpan: 'col-span-12' },
-  { label: 'Processor', value: 'AMD Ryzen 7 5825U', icon: 'cpu', gridSpan: 'col-span-6' },
-  { label: 'Battery', value: '4100mAh Battery', icon: 'battery', gridSpan: 'col-span-6' },
-  { label: 'Security', value: 'Built-In HW Wallet & Secure Element EAL5+', icon: 'shield', gridSpan: 'col-span-8' },
-  { label: 'Social', value: 'Social Logins Enabled', icon: 'users', gridSpan: 'col-span-4' },
-  { label: 'Camera', value: 'Rear Camera', icon: 'camera', gridSpan: 'col-span-4' },
-  { label: 'Interaction', value: "7'' Touch Display", icon: 'touch' },
+  { label: 'Battery', value: '4100mAh', icon: 'battery' },
+  { label: 'Security', value: 'HW Wallet & EAL5+', icon: 'shield', gridSpan: 'col-span-4' },
 ];
+
+const SpecCard = ({ label, value, gridSpan, className }: { label: string, value: React.ReactNode, gridSpan?: string, className?: string }) => (
+  <Widget gridSpan={gridSpan || 'col-span-4'} className={`spec-widget ${className}`}>
+    <div className="spec-content">
+      <span className="spec-label">{label}</span>
+      <div className="spec-value">{value}</div>
+    </div>
+  </Widget>
+);
 
 const HardwareSpecGrid = () => {
   return (
     <section className="genesis-specs py-24">
       <div className="genesis-container">
         <div className="genesis-grid">
-          {specs.map((spec, index) => (
-            <Widget key={index} gridSpan={spec.gridSpan || 'col-span-4'} className="spec-widget">
-              <div className="spec-content">
-                <span className="spec-label">{spec.label}</span>
-                <h3 className="spec-value">{spec.value}</h3>
-              </div>
-            </Widget>
-          ))}
+          {specs.map((spec, index) => {
+            let displayValue: React.ReactNode = spec.value;
+
+            if (spec.label === 'OS') {
+              displayValue = (
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                  <div style={{ height: '24px', display: 'flex', alignItems: 'center' }}>
+                    <Image
+                      src={Png.hyperplayFullWhite}
+                      alt="HyperPlay"
+                      height={20}
+                      style={{ objectFit: 'contain', width: 'auto' }}
+                    />
+                  </div>
+                </div>
+              );
+            }
+
+            return (
+              <SpecCard
+                key={index}
+                label={spec.label}
+                value={displayValue}
+                gridSpan={spec.gridSpan}
+                className="spec-widget"
+              />
+            );
+          })}
         </div>
       </div>
 
       <style jsx>{`
         .py-24 { padding: 6rem 0; }
-        .spec-content {
+        :global(.spec-content) {
           display: flex;
           flex-direction: column;
-          gap: 12px;
+          gap: 16px;
           height: 100%;
           justify-content: flex-end;
-          min-height: 120px;
+          min-height: 140px;
+          padding: 24px;
         }
-        .spec-label {
-          font-family: 'SourceCodePro-Medium', monospace;
-          font-size: 0.75rem;
-          color: var(--genesis-accent);
+        :global(.spec-label) {
+          font-family: 'Inter', sans-serif;
+          font-size: 0.7rem;
+          color: #BFF13F !important;
           text-transform: uppercase;
-          letter-spacing: 0.1em;
-          opacity: 0.8;
+          letter-spacing: 0.2em;
+          opacity: 0.9;
+          margin-bottom: 2px;
+          font-weight: 500;
         }
-        .spec-value {
-          font-family: 'InstrumentSans-SemiBold', sans-serif;
-          font-size: 1.25rem;
-          color: white;
-          line-height: 1.3;
+        :global(.spec-value) {
+          font-family: 'Inter', sans-serif;
+          font-size: 1.1rem;
+          color: rgba(255, 255, 255, 0.95);
+          line-height: 1.2;
         }
-        .spec-widget {
-          border-radius: 16px;
-          background: linear-gradient(135deg, #0A0A0A 0%, #050505 100%);
+        :global(.spec-widget) {
+          border-radius: 20px;
+          background: linear-gradient(135deg, #0F0F0F 0%, #050505 100%);
+          border: 1px solid rgba(255, 255, 255, 0.03);
         }
       `}</style>
     </section>

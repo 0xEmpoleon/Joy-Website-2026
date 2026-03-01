@@ -40,7 +40,7 @@ const GenesisHeader = () => {
         .genesis-nav-link {
           color: var(--genesis-text-secondary);
           text-decoration: none;
-          font-family: 'SourceCodePro-Medium', monospace;
+          font-family: 'Inter', monospace;
           font-size: 0.875rem;
           text-transform: uppercase;
           letter-spacing: 0.05em;
@@ -55,7 +55,7 @@ const GenesisHeader = () => {
           color: var(--genesis-accent);
           padding: 8px 20px;
           border-radius: 200px;
-          font-family: 'SourceCodePro-Bold', monospace;
+          font-family: 'Inter', monospace;
           font-size: 0.75rem;
           text-transform: uppercase;
           letter-spacing: 0.1em;

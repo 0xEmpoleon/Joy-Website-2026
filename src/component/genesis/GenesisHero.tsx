@@ -6,7 +6,7 @@ const GenesisHero = () => {
     <section className="genesis-hero">
       <div className="genesis-container flex flex-col items-center text-center">
         <h1 className="genesis-h1 mb-8 w-full">JOY GENESIS</h1>
-        <div className="hero-product-video mb-12 flex justify-center w-full relative">
+        <div className="hero-product-video px-4 mt-16 md:mt-40 relative z-0">
           {/* Intense Radial Glow as seen in Screenshot 5 */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] bg-radial-glow opacity-40 blur-[100px] pointer-events-none"></div>
 
@@ -50,7 +50,7 @@ const GenesisHero = () => {
         .max-w-5xl { max-width: 64rem; }
 
         .genesis-hero {
-          padding-top: 8rem;
+          padding-top: 12rem;
           padding-bottom: 6rem;
           position: relative;
           display: flex;
@@ -99,7 +99,7 @@ const GenesisHero = () => {
           height: auto !important;
         }
         .powered-by-text {
-          font-family: 'SourceCodePro-Medium', monospace;
+          font-family: 'Inter', monospace;
           font-size: 0.75rem;
           color: var(--genesis-accent);
           text-transform: uppercase;

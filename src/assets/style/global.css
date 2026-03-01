@@ -2,57 +2,17 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "SourceCodePro-Regular", monospace;
+  font-family: 'Inter', sans-serif;
 }
 
-/* Font Family */
+/* Legacy Fonts Removed - Using Inter/Inter Tight */
+/* 
 @font-face {
-  font-family: "SourceCodePro-Regular";
-  src: url("../fonts/Source_Code_Pro/SourceCodePro-Regular.ttf");
+  font-family: "Inter";
+  src: url("../fonts/Source_Code_Pro/Inter.ttf");
 }
-
-@font-face {
-  font-family: "SourceCodePro-Medium";
-  src: url("../fonts/Source_Code_Pro/SourceCodePro-Medium.ttf");
-}
-
-@font-face {
-  font-family: "SourceCodePro-Bold";
-  src: url("../fonts/Source_Code_Pro/SourceCodePro-Bold.ttf");
-}
-
-@font-face {
-  font-family: "SourceCodePro-SemiBold";
-  src: url("../fonts/Source_Code_Pro/SourceCodePro-SemiBold.ttf");
-}
-
-@font-face {
-  font-family: "SourceCodePro-Light";
-  src: url("../fonts/Source_Code_Pro/SourceCodePro-Light.ttf");
-}
-
-@font-face {
-  font-family: "N-Regular";
-  src: url("../fonts/N_Regular/N-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Twobit-Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Twobit-Bold"),
-    url("../fonts/twobit-webfont/Twobit-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "InstrumentSans-Medium";
-  src: url("../fonts/Instrument_Sans/static/InstrumentSans-Medium.ttf");
-}
-
-@font-face {
-  font-family: "InstrumentSans-SemiBold";
-  src: url("../fonts/Instrument_Sans/static/InstrumentSans-SemiBold.ttf");
-}
+... 
+*/
 
 :root {
   --primary-color: #2b2b2b;
@@ -213,7 +173,7 @@ body::before {
   margin-bottom: 30px;
   font-size: 64px;
   line-height: 64px;
-  font-family: "Twobit-Bold";
+  font-family: "Inter Tight";
   letter-spacing: 5px;
   font-weight: 400;
 }
@@ -223,7 +183,7 @@ body::before {
   font-size: 32px;
   line-height: 32px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
 }
 
 /* Intro video section */
@@ -268,7 +228,7 @@ body::before {
 /* Scroll text and instructions */
 .scroll-text {
   color: #ffffff;
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
 }
 
 .scrolldown-main {
@@ -327,7 +287,7 @@ body::before {
 }
 
 .gamin-con-inner .next-gen-title {
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   font-size: 39px;
   line-height: 48px;
   letter-spacing: -2px;
@@ -366,7 +326,7 @@ body::before {
 }
 
 .berachain-con-sec .berachain-title {
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
   font-size: 12px;
   line-height: 18px;
   text-align: center;
@@ -382,7 +342,7 @@ body::before {
 }
 
 .main-title-sec .main-title {
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   font-size: 48px;
   line-height: 48px;
   text-align: center;
@@ -435,7 +395,7 @@ body::before {
 }
 
 .common-text {
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   font-size: 18px;
   line-height: 25px;
   color: #000000;
@@ -503,7 +463,7 @@ body::before {
 }
 
 .specification-box .specif-title {
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
@@ -513,7 +473,7 @@ body::before {
 
 .specification-box .specif-con,
 .specif-ul .specif-li {
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
@@ -576,7 +536,7 @@ body::before {
   list-style: none;
   position: relative;
   font-size: 20px;
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   transition: background-color 0.3s ease;
   color: #ffffff;
   text-align: center;
@@ -618,7 +578,7 @@ body::before {
   color: #d0d0d0;
   font-size: 18px;
   color: #ffffff;
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
 }
 
 .accordion-main-sec .accordion-content p:last-child {
@@ -694,7 +654,7 @@ video::-webkit-media-controls-panel {
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
   transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.2s ease;
   letter-spacing: 3px;
-  font-family: "SourceCodePro-SemiBold", monospace;
+  font-family: "Inter", monospace;
 }
 
 .main-btn:hover {
@@ -744,7 +704,7 @@ video::-webkit-media-controls-panel {
   -ms-border-radius: 200px;
   -o-border-radius: 200px;
   color: #000000;
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
 }
 
 .best-for-btn-sec .cus-toggle-btn.MuiToggleButtonGroup-firstButton,
@@ -790,7 +750,7 @@ video::-webkit-media-controls-panel {
 }
 
 .joy-genesis-con .price-text {
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   font-size: 50px;
   color: #000000;
   line-height: 63px;
@@ -801,7 +761,7 @@ video::-webkit-media-controls-panel {
   background: #2b2b2b;
   border-color: #edffad;
   color: #edffad;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 3px;
@@ -841,7 +801,7 @@ video::-webkit-media-controls-panel {
   line-height: 25px;
   word-break: break-word;
   margin-bottom: 25px;
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
 }
 
 .aboutus-inner-left .what-joy-main {
@@ -874,7 +834,7 @@ video::-webkit-media-controls-panel {
 .footer-inner-sec .main-title {
   margin-bottom: 41px;
   font-size: 75px;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   line-height: 80px;
 }
 
@@ -911,7 +871,7 @@ video::-webkit-media-controls-panel {
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
 }
 
 .admin-form-group .admin-form-control input::placeholder {
@@ -1075,7 +1035,7 @@ video::-webkit-media-controls-panel {
   line-height: 24px;
   letter-spacing: 0px;
   text-align: center;
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
   text-decoration: none;
 }
 
@@ -1156,7 +1116,7 @@ video::-webkit-media-controls-panel {
 }
 
 .nft-checkout-content-sec .checkout-title {
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   font-size: 48px;
   line-height: 48px;
   color: #2b2b2b;
@@ -1164,7 +1124,7 @@ video::-webkit-media-controls-panel {
 }
 
 .nft-checkout-content-sec .common-text {
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 48px;
@@ -1176,7 +1136,7 @@ video::-webkit-media-controls-panel {
 }
 
 .nft-checkout-content-sec .checkout-value {
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   font-size: 48px;
   line-height: 48px;
   color: #2b2b2b;
@@ -1209,7 +1169,7 @@ video::-webkit-media-controls-panel {
   letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   color: #2b2b2b;
 }
 
@@ -1235,7 +1195,7 @@ video::-webkit-media-controls-panel {
   line-height: 24px;
   color: #1a1a1a;
   margin: 0 0 12px 0;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   text-transform: capitalize;
 }
 
@@ -1282,7 +1242,7 @@ select {
   letter-spacing: 0.3px;
   transition: all 0.2s;
   text-transform: uppercase;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
 }
 
 .cus-tab-content input::placeholder,
@@ -1344,7 +1304,7 @@ select {
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   -webkit-border-radius: 28px;
   -moz-border-radius: 28px;
   -ms-border-radius: 28px;
@@ -1388,7 +1348,7 @@ select {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 1.5px;
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
   margin-bottom: 8px;
 }
 
@@ -1439,7 +1399,7 @@ select {
 
 .specification-bg .specification-title {
   font-size: 24px;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   color: #ffffff;
   line-height: 34px;
   margin-bottom: 0;
@@ -1459,7 +1419,7 @@ select {
 }
 
 .specification-perorder {
-  font-family: "SourceCodePro-bold";
+  font-family: "Inter";
   color: #ffffff;
   padding: 25px 0px;
   font-size: 18px;
@@ -1593,7 +1553,7 @@ select {
   font-size: 30px;
   line-height: 60px;
   letter-spacing: 1.5px;
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
   font-weight: 400;
 }
 
@@ -1630,7 +1590,7 @@ select {
   font-size: 100px;
   line-height: 104.51px;
   letter-spacing: 2.61px;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   text-transform: uppercase;
   background: linear-gradient(180deg, #fff8e1 0%, #edffad 80%, #d4e896 70%);
   -webkit-background-clip: text;
@@ -1654,7 +1614,7 @@ select {
   line-height: 50px;
   margin-bottom: 15px;
   font-weight: 400;
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
 }
 
 .prebook-genesis-details .prebook-join-title {
@@ -1662,7 +1622,7 @@ select {
   font-size: 40px;
   line-height: 49px;
   letter-spacing: 0;
-  font-family: "InstrumentSans-Medium";
+  font-family: "Inter";
   margin-bottom: 39.7px;
   width: 100%;
   max-width: 766px;
@@ -1686,7 +1646,7 @@ select {
   line-height: 29px;
   color: rgb(255 255 255 / 50%);
   padding: 15.27px 29px;
-  font-family: "InstrumentSans-Medium";
+  font-family: "Inter";
 }
 
 .prebook-form-group .form-control::placeholder {
@@ -1707,7 +1667,7 @@ select {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.7px;
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   transition: 0.5s all ease-in-out;
   -webkit-transition: 0.5s all ease-in-out;
   -moz-transition: 0.5s all ease-in-out;
@@ -1752,7 +1712,7 @@ select {
   color: #99a1af;
   font-size: 17.61px;
   line-height: 21px;
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
   font-weight: 400;
   letter-spacing: 0.34px;
   transition: all 0.3s ease-in-out;
@@ -1826,7 +1786,7 @@ select {
   letter-spacing: 0.45px;
   font-weight: 100;
   margin-bottom: 14px;
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
 }
 
 .keybenefits-desc {
@@ -1835,7 +1795,7 @@ select {
   letter-spacing: 0.34px;
   max-width: 426px;
   color: #000000;
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
   font-weight: 400;
   font-style: italic;
   margin-bottom: 26px;
@@ -1847,7 +1807,7 @@ select {
   font-size: 17.61px;
   line-height: 25.17px;
   letter-spacing: 0.34px;
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
   margin-bottom: 12px;
 }
 
@@ -1862,7 +1822,7 @@ select {
   font-size: 15.09px;
   letter-spacing: 0.3px;
   line-height: 18.14px;
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
   font-weight: 400;
 }
 
@@ -1936,7 +1896,7 @@ select {
   font-size: 14px;
   line-height: 16px;
   color: #edffad;
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -1945,7 +1905,7 @@ select {
 .process-card-details .descrition-card-process {
   font-size: 15px;
   line-height: 23px;
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   color: #ffffff;
   letter-spacing: 1px;
 }
@@ -1953,7 +1913,7 @@ select {
 .process-card-details ul li {
   font-size: 15px;
   line-height: 23px;
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   color: #ffffff;
   letter-spacing: 1px;
 }
@@ -1985,14 +1945,14 @@ select {
   /* color: #FFFFFF;
     font-size: 71px;
     letter-spacing: -1.52px;
-    font-family: 'SourceCodePro-SemiBold';
+    font-family: 'Inter';
     text-align: center;
     line-height: 80px;
     margin-bottom: 44px; */
   font-size: 77px;
   line-height: 100px;
   letter-spacing: -2px;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   text-transform: uppercase;
   background: linear-gradient(180deg, #fff8e1 0%, #edffad 80%, #d4e896 70%);
   -webkit-background-clip: text;
@@ -2031,7 +1991,7 @@ select {
   margin-bottom: 5px;
   width: 100%;
   max-width: 766px;
-  font-family: "InstrumentSans-Medium";
+  font-family: "Inter";
   text-align: center;
   margin: 0 auto;
 }
@@ -2080,7 +2040,7 @@ select {
   color: #ffffff;
   font-size: 18px;
   line-height: 25px;
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
 }
 
 .copy-right-footer-bg {
@@ -2100,7 +2060,7 @@ select {
   font-size: 15.09px;
   line-height: 18.14px;
   letter-spacing: 0.3px;
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
 }
 
 /* PreBook CSS End */
@@ -2160,7 +2120,7 @@ select {
   line-height: 53px;
   margin-bottom: 18px;
   color: #ffffff;
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   letter-spacing: -0.32px;
   text-align: start;
 }
@@ -2170,7 +2130,7 @@ select {
   line-height: 53px;
   margin-bottom: 18px;
   color: #ffffff;
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   letter-spacing: -0.32px;
 }
 
@@ -2178,7 +2138,7 @@ select {
   font-size: 18px;
   line-height: 25px;
   color: #ffffff;
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   margin-bottom: 10px;
 }
 
@@ -2189,7 +2149,7 @@ select {
   border: none;
   color: #9c9c9c;
   font-size: 20px;
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   line-height: 22px;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -2222,7 +2182,7 @@ select {
   letter-spacing: 1.6px;
   line-height: 24px;
   color: #edffad;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
 }
 
 .search-box input::placeholder {
@@ -2281,7 +2241,7 @@ select {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 6px;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   text-transform: uppercase;
 }
 
@@ -2292,7 +2252,7 @@ select {
 .card-title {
   font-size: 24px;
   line-height: 27px;
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
   color: #fff;
   letter-spacing: -0.35px;
   font-weight: 400;
@@ -2368,7 +2328,7 @@ select {
   font-size: 16px;
   line-height: 28px;
   min-width: unset;
-  font-family: "SourceCodePro-Regular";
+  font-family: "Inter";
 }
 
 .pagination-stack-main .MuiPaginationItem-rounded.Mui-disabled {
@@ -2407,7 +2367,7 @@ select {
   font-size: 48px;
   line-height: 50px;
   letter-spacing: -0.35px;
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   color: #fff;
   margin-bottom: 40px;
 }
@@ -2416,7 +2376,7 @@ select {
   font-size: 24px;
   line-height: 36px;
   letter-spacing: -0.35px;
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   color: #fff;
   margin-bottom: 50px;
 }
@@ -2439,14 +2399,14 @@ select {
     font-size: 40px;
     z-index: 9999;
     position: relative;
-   font-family: 'SourceCodePro-Bold';
+   font-family: 'Inter';
    text-align: center; */
   color: #fdfdfd;
   text-align: right;
   margin-bottom: 30px;
   font-size: 65px;
   line-height: 80px;
-  font-family: "Twobit-Bold";
+  font-family: "Inter Tight";
   letter-spacing: 5px;
   font-weight: 400;
   position: fixed;
@@ -2458,7 +2418,7 @@ select {
   /* max-width: 1200px; */
   opacity: 0;
   visibility: hidden;
-  /* font-family: 'SourceCodePro-Bold'; */
+  /* font-family: 'Inter'; */
   /* letter-spacing: 0; */
   -webkit-text-stroke: 2px #000000;
 }
@@ -2467,7 +2427,7 @@ select {
   font-size: 50px;
   color: #edffad;
   -webkit-text-stroke: 2px #000;
-  font-family: "SourceCodePro-Bold";
+  font-family: "Inter";
   letter-spacing: 0;
 }
 
@@ -2478,7 +2438,7 @@ select {
     font-size: 50px;
     color: #edffad;
     -webkit-text-stroke: 2px #000;
-    font-family: 'SourceCodePro-Bold';
+    font-family: 'Inter';
     letter-spacing: 0;
 } */
 
@@ -2709,17 +2669,17 @@ select {
 
 .sc-2-heading {
   letter-spacing: 5px;
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   font-size: 3.33em;
   line-height: 110%;
   color: white;
   width: max-content;
   -webkit-text-stroke: 2px #000000;
-  font-family: "Twobit-Bold";
+  font-family: "Inter Tight";
 }
 
 .sc-2-prog_text {
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   font-size: 1.04em;
   line-height: 120%;
   color: #000000;
@@ -2742,7 +2702,7 @@ select {
   width: max-content;
   background: linear-gradient(180deg, #ffffff -127.01%, #edffad 100%);
   box-shadow: 0px 0px 140px 0px #edffad4d;
-  font-family: "InstrumentSans-SemiBold";
+  font-family: "Inter";
   color: #2b2b2b;
   font-size: 32px;
   line-height: 39px;
@@ -2828,7 +2788,7 @@ select {
 .curve-text-sec svg text {
   text-anchor: middle;
   font-size: 85px;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   letter-spacing: 8px;
   text-transform: uppercase;
   -webkit-text-stroke: 3px #000000;
@@ -2860,7 +2820,7 @@ select {
   font-size: 64px;
   line-height: 96px;
   letter-spacing: 2.61px;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   /* text-transform: uppercase; */
   background: linear-gradient(180deg, #fff8e1 0%, #edffad 80%, #d4e896 70%);
   -webkit-background-clip: text;
@@ -2949,7 +2909,7 @@ select {
   font-size: 31px;
   line-height: 34px;
   letter-spacing: -0.3px;
-  font-family: "InstrumentSans-Medium";
+  font-family: "Inter";
 }
 
 .specification-grid-main .left-specification-content {
@@ -2968,7 +2928,7 @@ select {
   padding: 15.16px 19.2px;
   border: 1px solid #edffad;
   color: rgb(255 255 255 / 50%);
-  font-family: "InstrumentSans-Medium";
+  font-family: "Inter";
   font-size: 24px;
   line-height: 29px;
 }
@@ -2986,7 +2946,7 @@ select {
   background: linear-gradient(180deg, #ffffff -127.01%, #edffad 100%);
   box-shadow: 0px 0px 140px 0px #edffad17;
   color: #2b2b2b;
-  font-family: "InstrumentSans-SemiBold";
+  font-family: "Inter";
   width: max-content;
   font-size: 32px;
   padding: 18px 35px;
@@ -3084,7 +3044,7 @@ select {
 .coming-soon-text {
   font-size: 32px;
   line-height: 39px;
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   color: #edffad;
   text-align: center;
   margin: 0;
@@ -3114,7 +3074,7 @@ select {
   font-size: 48px;
   line-height: 49px;
   letter-spacing: -2px;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   color: #ffffff;
   /* text-transform: uppercase; */
   margin: 0;
@@ -3321,7 +3281,7 @@ select {
 
 .video-title-text {
   letter-spacing: -3px;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   font-size: 64px;
   line-height: 80px;
   color: white;
@@ -3342,7 +3302,7 @@ select {
 }
 
 .video-title-sub-text {
-  font-family: "SourceCodePro-Medium";
+  font-family: "Inter";
   font-size: 48px;
   line-height: 60px;
   color: #edffad;
@@ -3709,7 +3669,7 @@ select {
   font-size: 40px;
   line-height: 62px;
   letter-spacing: -3px;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   background: linear-gradient(180deg, #fff8e1 0%, #edffad 80%, #d4e896 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -3723,7 +3683,7 @@ select {
   font-size: 27px;
   line-height: 29px;
   letter-spacing: 0;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   color: #ffffff;
   margin-bottom: 5px;
 }
@@ -3819,7 +3779,7 @@ select {
   font-size: 21px;
   line-height: 28px;
   letter-spacing: 0;
-  font-family: "SourceCodePro-SemiBold";
+  font-family: "Inter";
   text-transform: uppercase;
   background: linear-gradient(180deg, #fff8e1 0%, #edffad 80%, #d4e896 70%);
   -webkit-background-clip: text;
@@ -3995,7 +3955,7 @@ select {
 
 .home-specification-sec .specification-bg .specification-title {
   font-size: 15px;
-  font-family: 'SourceCodePro-SemiBold';
+  font-family: 'Inter';
   color: #edffad;
   line-height: 16px;
   margin-bottom: 10px;

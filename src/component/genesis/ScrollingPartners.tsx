@@ -1,13 +1,13 @@
-import React from 'react';
+import Png from '@/assets/Png';
 
 const partners = [
   { name: 'Solana', logo: 'https://cryptologos.cc/logos/solana-sol-logo.svg?v=040', url: 'https://solana.com/' },
   { name: 'Somnia', logo: 'https://somnia.network/favicon.ico', url: 'https://somnia.network/' },
-  { name: 'Berachain', logo: 'https://www.berachain.com/favicon-32x32.png', url: 'https://www.berachain.com/' },
-  { name: 'Moonbeam', logo: 'https://moonbeam.network/wp-content/uploads/2020/03/Moonbeam-Logo-Final-500px.png', url: 'https://moonbeam.network/' },
-  { name: 'Good Games', logo: 'https://www.yieldguild.io/favicon.ico', url: 'https://www.yieldguild.io/' },
-  { name: 'MoonPay', logo: 'https://www.moonpay.com/favicon.ico', url: 'https://www.moonpay.com/' },
-  { name: 'Hyperplay', logo: 'https://hyperplay.xyz/favicon.ico', url: 'https://hyperplay.xyz/' },
+  { name: 'Berachain', logo: Png.logoWhite.src, url: 'https://www.berachain.com/' },
+  { name: 'Moonbeam', logo: Png.moonbeamWhite.src, url: 'https://moonbeam.network/' },
+  { name: 'Good Games', logo: Png.goodgamesWhite.src, url: 'https://www.goodgames.gg/' },
+  { name: 'MoonPay', logo: 'https://cryptologos.cc/logos/moonpay-logo.svg?v=040', url: 'https://www.moonpay.com/' },
+  { name: 'Hyperplay', logo: '/hyperplay-logo-v3.png', url: 'https://hyperplay.xyz/' },
 ];
 
 const ScrollingPartners = () => {
@@ -27,7 +27,13 @@ const ScrollingPartners = () => {
               className="partner-logo-box"
               title={partner.name}
             >
-              <img src={partner.logo} alt={partner.name} />
+              <img
+                src={partner.logo}
+                alt={partner.name}
+                onError={(e) => {
+                  (e.target as HTMLImageElement).style.display = 'none';
+                }}
+              />
             </a>
           ))}
         </div>
@@ -55,12 +61,12 @@ const ScrollingPartners = () => {
         }
         .partner-logo-box {
           flex: 0 0 auto;
-          height: 50px;
+          height: 40px;
           display: flex;
           align-items: center;
           justify-content: center;
-          filter: grayscale(1) brightness(2.5);
-          opacity: 0.5;
+          filter: grayscale(1) brightness(2);
+          opacity: 0.6;
           transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
           text-decoration: none;
         }

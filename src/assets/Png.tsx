@@ -52,6 +52,9 @@ import bonkIcon from "./images/png/bonkIcon.webp";
 import pudgyIcon from "./images/png/pudgyIcon.webp";
 import discordGeen from "./images/png/discordGeen.png";
 import joylogo from "./images/png/joylogo.png";
+import moonbeamWhite from "./images/png/moonbeam_white.jpg";
+import goodgamesWhite from "./images/png/goodgames_white.png";
+import hyperplayFullWhite from "./images/png/hyperplay_full_white.png";
 
 const Png = {
   gamePad,
@@ -108,6 +111,9 @@ const Png = {
   bonkIcon,
   discordGeen,
   joylogo,
+  moonbeamWhite,
+  goodgamesWhite,
+  hyperplayFullWhite,
 };
 
 export default Png;

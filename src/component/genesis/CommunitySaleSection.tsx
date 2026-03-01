@@ -7,9 +7,9 @@ const CommunitySaleSection = () => {
       <div className="genesis-container relative z-10">
         <div className="sale-content text-left max-width-800" style={{ margin: '0 0' }}>
           <h2 className="genesis-h2 mb-4 accent-text" style={{ textAlign: 'left', fontSize: '1.25rem' }}>Community Card Sale. JOY Genesis</h2>
-          <h2 className="genesis-h1 large-hero" style={{ textAlign: 'left', marginBottom: '2rem', fontSize: '5rem' }}>Sleek not meek.</h2>
-          <p className="genesis-body-text mt-8 light-text" style={{ textAlign: 'left', margin: '0 0', maxWidth: '600px', fontSize: '1.25rem' }}>
-            Play indie gems, retro classics, and AAA on-chain games all on one powerful handheld gaming computer.
+          <h2 className="genesis-h1 large-hero" style={{ textAlign: 'left', marginBottom: '2rem', fontSize: '5rem' }}>Game. Earn. JOY!</h2>
+          <p className="genesis-body-text mt-8 light-text" style={{ textAlign: 'left', margin: '0 0', maxWidth: '700px', fontSize: '1.25rem' }}>
+            The first GameFi hardware publisher. A physical distribution gateway for Web3 gaming, bridging digital depth with tactical reality. The next-gen handheld gaming computer for a multi-chain world.
           </p>
         </div>
       </div>

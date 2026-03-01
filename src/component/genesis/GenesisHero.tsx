@@ -27,14 +27,15 @@ const GenesisHero = () => {
             <input type="email" placeholder="Enter your email" className="cta-input" />
             <button className="main-btn genesis-cta-btn">Reserve Now</button>
           </div>
-          <div className="hyperplay-branding">
+          <div className="hyperplay-branding mt-8">
             <a
               href="https://hyperplay.xyz"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 no-underline hover:opacity-80 transition-opacity"
+              className="flex items-center gap-4 no-underline hover:opacity-80 transition-opacity"
             >
-              <Image src="/hyperplay-logo-v3.png" alt="JOY OS powered by Hyperplay" width={220} height={40} className="object-contain" />
+              <span className="text-white/40 uppercase tracking-[0.2em] text-[0.7rem] font-medium">OS powered by</span>
+              <Image src="/hyperplay-logo-v3.png" alt="HyperPlay" width={160} height={30} className="object-contain" />
             </a>
           </div>
         </div>
